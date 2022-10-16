@@ -3,7 +3,7 @@ function Listing({ items }) {
 		<div className="item-list">
 			{items.map((item) => {
 				// className
-				if (item.MainImage) {
+				if (item.state === "active") {
 					let quantitylevel = "";
 					if (item.quantity <= 10) {
 						quantitylevel = "level-low";
